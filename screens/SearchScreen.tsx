@@ -11,31 +11,29 @@ interface Word {
 }
 
 export default function SearchScreen() {
-  const [query, setQuery] = useState<string>('');  // Search query
-  const [favorites, setFavorites] = useState<Word[]>([]); // List of favorite words
+  const [query, setQuery] = useState<string>('');
+  const [favorites, setFavorites] = useState<Word[]>([]);
 
   useEffect(() => {
-    loadFavorites();  // Load favorites from AsyncStorage on component mount
+    loadFavorites();
   }, []);
 
   const loadFavorites = async () => {
     const savedFavorites = await AsyncStorage.getItem('favorites');
     if (savedFavorites) {
-      setFavorites(JSON.parse(savedFavorites));  // Parse and set favorites if they exist
+      setFavorites(JSON.parse(savedFavorites));
     }
   };
 
   const toggleFavorite = async (item: Word) => {
     let updatedFavorites;
     if (favorites.some(fav => fav.id === item.id)) {
-      // Remove the item from favorites if already present
       updatedFavorites = favorites.filter(fav => fav.id !== item.id);
     } else {
-      // Add the item to favorites if not already present
       updatedFavorites = [...favorites, item];
     }
-    setFavorites(updatedFavorites);  // Update state with the new favorites list
-    await AsyncStorage.setItem('favorites', JSON.stringify(updatedFavorites));  // Save the new list to AsyncStorage
+    setFavorites(updatedFavorites);
+    await AsyncStorage.setItem('favorites', JSON.stringify(updatedFavorites));
   };
 
   const filteredData = sampleData.filter(item =>
@@ -49,7 +47,7 @@ export default function SearchScreen() {
         style={styles.input}
         placeholder="Search Geez, Amharic or English"
         value={query}
-        onChangeText={text => setQuery(text)}  // Update the query as the user types
+        onChangeText={text => setQuery(text)}
       />
       <FlatList
         data={filteredData}
