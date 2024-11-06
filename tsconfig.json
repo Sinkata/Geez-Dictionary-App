@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-native",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  },
+  "include": [
+    "node_modules/@types",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "index.ts",
+    "index.tsx"
+  ],
+  "extends": "expo/tsconfig.base"
+}

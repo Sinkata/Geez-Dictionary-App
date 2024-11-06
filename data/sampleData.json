@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "geez": "እዝና",
+    "english": "Ezana",
+    "pronunciation": "Eh-za-na",
+    "partOfSpeech": "noun",
+    "definition": "A name of Ethiopian origin, referring to a famous king of Aksum."
+  },
+  {
+    "id": 2,
+    "geez": "ሰላም",
+    "english": "Peace",
+    "pronunciation": "Se-lam",
+    "partOfSpeech": "noun",
+    "definition": "A state of tranquility or quiet."
+  },
+  {
+    "id": 3,
+    "geez": "ትህትና",
+    "english": "Humility",
+    "pronunciation": "Ti-hi-ti-na",
+    "partOfSpeech": "noun",
+    "definition": "A modest or low view of one's importance; humbleness."
+  },
+  {
+    "id": 4,
+    "geez": "ምስላ",
+    "english": "Example",
+    "pronunciation": "Mi-si-la",
+    "partOfSpeech": "noun",
+    "definition": "A thing characteristic of its kind or illustrating a general rule."
+  }
+]
