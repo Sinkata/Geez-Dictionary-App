@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "geez": "እዝና",
+    "geez": "ኢዛና",
     "english": "Ezana",
     "pronunciation": "Eh-za-na",
     "partOfSpeech": "noun",
@@ -13,7 +13,7 @@
     "english": "Peace",
     "pronunciation": "Se-lam",
     "partOfSpeech": "noun",
-    "definition": "A state of tranquility or quiet."
+    "definition": "ሰላም."
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "english": "Humility",
     "pronunciation": "Ti-hi-ti-na",
     "partOfSpeech": "noun",
-    "definition": "A modest or low view of one's importance; humbleness."
+    "definition": "ትህትና"
   },
   {
     "id": 4,
@@ -29,6 +29,6 @@
     "english": "Example",
     "pronunciation": "Mi-si-la",
     "partOfSpeech": "noun",
-    "definition": "A thing characteristic of its kind or illustrating a general rule."
+    "definition": "ምስላ"
   }
 ]
