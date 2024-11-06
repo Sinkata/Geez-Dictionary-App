@@ -10,8 +10,16 @@ function AppNavigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Search" component={SearchScreen} />
+        <Stack.Screen 
+          name="Home" 
+          component={HomeScreen} 
+          options={{ title: 'Home' }}  // Optional: customize header title
+        />
+        <Stack.Screen 
+          name="Search" 
+          component={SearchScreen} 
+          options={{ title: 'Search' }}  // Optional: customize header title
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
